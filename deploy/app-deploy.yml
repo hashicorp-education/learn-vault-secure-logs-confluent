@@ -106,7 +106,7 @@ spec:
           value: '10'
         - name: PATH_TO_LOG
           value: '/fluentd/log/user.log'
-        image: moayadi/vault-confluentcloud-demo:app-latest
+        image: hashieducation/vault-confluentcloud-demo-app:latest
         imagePullPolicy: Always
         resources:
           limits:
@@ -119,7 +119,7 @@ spec:
           mountPath:  /fluentd/log
 
       - name: fluentd
-        image: moayadi/vault-confluentcloud-demo:fluentd-latest
+        image: hashieducation/vault-confluentcloud-demo-fluentd:latest
         imagePullPolicy: Always
         resources:
           limits:

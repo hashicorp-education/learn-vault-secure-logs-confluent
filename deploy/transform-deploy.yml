@@ -38,7 +38,7 @@ spec:
           value: ''
         - name: LOGLEVEL
           value: 'DEBUG'
-        image: moayadi/vault-confluentcloud-demo:transform-latest
+        image: hashieducation/vault-confluentcloud-demo-transform:latest
         imagePullPolicy: Always
         resources:
           limits:
